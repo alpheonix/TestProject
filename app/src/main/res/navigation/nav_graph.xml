@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/albumsFragment">
+
+    <fragment
+        android:id="@+id/albumsFragment"
+        android:name="com.example.sillappsproject.ui.main.fragments.main.MainFragment"
+        android:label="fragment_albums"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_albumFragment_to_detailFragment"
+            app:destination="@+id/detail_fragment2"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_fragment2"
+        android:name="com.example.sillappsproject.ui.main.fragments.details.ui.detailfragment2.DetailFragment2"
+        android:label="fragment_detail"
+        tools:layout="@layout/detail_activity" >
+    </fragment>
+</navigation>
